@@ -8,10 +8,10 @@
   <body>
     <li><a href="<%= link.href%>"><%= link.text %>></a></li>
     <ul>
-      <% messages.forEach((message, index) => { %>
+      <% messages.forEach((message) => { %>
       <li>
-        <a href="/message/<%= index %>">Details</a>
-        <p><%= message.text %></p>
+        <a href="/message/<%= message.id %>">Details</a>
+        <p><%= message.message %></p>
       </li>
       <%})%>
     </ul>

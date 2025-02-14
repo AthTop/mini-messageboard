@@ -9,9 +9,9 @@
     <form method="POST" action="/new">
         <h1>New message</h1>
         <label for="user">Enter user name:</label>
-        <input type="text" name="user">
+        <input type="text" name="user" max="32">
         <label for="text">Enter your message:</label>
-        <input type="text" name="text">
+        <input type="text" name="text" max="200">
         <button type="submit">Post new message</button>
     </form>
 </body>
